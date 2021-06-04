@@ -8,6 +8,7 @@ section {
     width: 70%;
     margin: auto;
     margin-top: 50px;
+    padding: 15px;
 }
 
 section h1, h2 {
@@ -23,6 +24,7 @@ section h1, h2 {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
+    margin: 15px;
 }
 .block{
     display: block;
@@ -30,8 +32,6 @@ section h1, h2 {
 .none{
     display: none;
 }
-
-
 /* FINE COMMONS  */
 /* section visibile  */
 #visibile .box-input{
@@ -57,14 +57,32 @@ section h1, h2 {
     border-top: 1px solid #757575;
     border-bottom: 1px solid #757575;
 }
+
 #invisibile table {
     width: 100%;
 }
-.box-ticket .box-passegero {
-    width: 20%;
-    height: 100%;
-    background-color: #757575;
+.box-ticket .box-passeggero {
+    display: flex;
+    flex-direction: column;
 }
+.box-passeggero .sub-passeggero {
+    width: 100%;
+    background-color: #757575;
+    flex-grow: 1;
+    padding: 5px;
+}
+.box-passeggero #nome-pass {
+    margin-top: 10px;
+}
+table tr.sotto{
+    height: 100px;
+    vertical-align: bottom;
+}
+table td {
+    text-align: center;
+}
+
+
 
 
 
