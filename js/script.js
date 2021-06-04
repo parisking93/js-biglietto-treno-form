@@ -3,7 +3,7 @@ var genera = document.getElementById('genera');
 // call back function click genera
 genera.addEventListener('click', function(){
     var nome = document.getElementById('nome').value;
-    nome = nome.charAt(0).toUpperCase() + nome.slice(1);
+    nome = nome.charAt(0).toUpperCase() + nome.slice(1).toLowerCase();
     var km = parseFloat(document.getElementById('km').value);
     var eta = document.getElementById('eta').value;
     eta = eta.charAt(0).toUpperCase() + eta.slice(1);
@@ -26,20 +26,25 @@ genera.addEventListener('click', function(){
             var cognome = nome.slice(++i);
             nome = nome.slice(0,i);
             cognome = cognome.charAt(0).toUpperCase() + cognome.slice(1);
+            var addCognome = true;
         }
     }
 
     if (nome !== "" && !(isNaN(km)) && isNaN(nome)) {
         // output
         document.getElementById("invisibile").className = "block"; 
-        document.getElementById('nome-pass').innerHTML = nome + cognome;
+        if (addCognome == !(undefined)) {
+            document.getElementById('nome-pass').innerHTML = nome + cognome;
+        } else {
+            document.getElementById('nome-pass').innerHTML = nome;
+        }
         document.getElementById('sconto').innerHTML = 'Sconto ' + '<br>' + eta;
         document.getElementById('carrozza').innerHTML = carrozzaRandom;
         document.getElementById('codice-cp').innerHTML = codiceRandom;
         document.getElementById('costo').innerHTML = prezzoCorsa.toFixed(2) + ' €';
 
     } else {
-        alert('inserisci i giusti dati nei campi o non lasciare campi vuoti');
+        alert('inserisci i giusti dati nei campi o non lasciare campi vuoti.... anche spazi prima delle parole o numeri non sono concessi');
     }
     
 });
