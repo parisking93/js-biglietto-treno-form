@@ -14,10 +14,23 @@ genera.addEventListener('click', function(){
         prezzoCorsa *= 0.6;
     } else if (eta == 'minorenne') {
         prezzoCorsa *= 0.8;
+    } else {
+        eta = 'nessuno';
     }
+    
     // output
+    document.getElementById("invisibile").className = "block"; 
+    document.getElementById('nome-pass').innerHTML = nome;
     document.getElementById('sconto').innerHTML = 'sconto ' + '<br>' + eta;
     document.getElementById('carrozza').innerHTML = carrozzaRandom;
     document.getElementById('codice-cp').innerHTML = codiceRandom;
     document.getElementById('costo').innerHTML = prezzoCorsa.toFixed(2) + ' €';
+});
+
+var annulla = document.getElementById('annulla');
+
+annulla.addEventListener('click', function(){
+    nome.value = "";
+    km.value= "";
+    document.getElementById("invisibile").className = "none"; 
 });

@@ -24,6 +24,14 @@ section h1, h2 {
     padding: 20px;
     border-radius: 10px;
 }
+.block{
+    display: block;
+}
+.none{
+    display: none;
+}
+
+
 /* FINE COMMONS  */
 /* section visibile  */
 #visibile .box-input{
