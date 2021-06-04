@@ -20,7 +20,7 @@ genera.addEventListener('click', function(){
     } else {
         eta = 'Nessuno';
     }
-    if (nome !== "" && !(isNaN(km))) {
+    if (nome !== "" && !(isNaN(km)) && isNaN(nome)) {
         // output
         document.getElementById("invisibile").className = "block"; 
         document.getElementById('nome-pass').innerHTML = nome;
