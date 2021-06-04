@@ -1,0 +1,19 @@
+
+section h1 {
+     text-align: center;
+}
+section .box-input{
+    display: flex;
+    justify-content: center;
+}
+section .box-nome {
+    text-align: center;
+}
+section input{
+    display: block;
+}
+section .box-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

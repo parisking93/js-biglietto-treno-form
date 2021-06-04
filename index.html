@@ -8,12 +8,33 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <section>
+    <section id="visibile">
+        <!-- titolo  -->
         <h1>calcola il prezzo del tuo biglietto</h1>
-        <label for="nome">nome cognome</label>
-        <input type="text" id="nome" placeholder="Inserisci il nome">
-        
+        <div class="cointainer">
+        <!-- box con tutti gli input  -->
+            <div class="box-input">
+                <div class="box-nome">
+                    <label for="nome">nome cognome</label>
+                    <input type="text" id="nome" placeholder="Inserisci il nome">
+                </div>
+                <div class="box-nome">
+                    <label for="km">km da percorrere</label>
+                    <input type="text" id="km" placeholder="Inserisci i m da percorrere">
+                </div>
+                <div class="box-nome">
+                    <label for="eta">fascia d'età</label>
+                    <input type="text" id="eta" placeholder="Inserisci il nome">
+                </div>
+            </div> 
+        <!-- fine box con gli input  -->
+            <div class="box-button">
+                <button id="genera">genera</button>
+                <button id="annulla">annulla</button>
+            </div>
+        </div>
     </section>
+
     <script src="js/script.js"></script>
 </body>
 </html>
