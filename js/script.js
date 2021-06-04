@@ -5,7 +5,6 @@ genera.addEventListener('click', function(){
     var nome = document.getElementById('nome').value;
     nome = nome.charAt(0).toUpperCase() + nome.slice(1);
     var km = parseFloat(document.getElementById('km').value);
-    console.log(typeof km);
     var eta = document.getElementById('eta').value;
     eta = eta.charAt(0).toUpperCase() + eta.slice(1);
     var codiceRandom = Math.floor(Math.random() * (100000 - 90000) + 90000);
@@ -20,10 +19,20 @@ genera.addEventListener('click', function(){
     } else {
         eta = 'Nessuno';
     }
+    
+    // controllo che se l'utente inserisci il cognome allora la prima lettera del cognome è uppercase
+    for (i = 0; i < nome.length; i++) {
+        if (nome[i] == ' ') {
+            var cognome = nome.slice(++i);
+            nome = nome.slice(0,i);
+            cognome = cognome.charAt(0).toUpperCase() + cognome.slice(1);
+        }
+    }
+
     if (nome !== "" && !(isNaN(km)) && isNaN(nome)) {
         // output
         document.getElementById("invisibile").className = "block"; 
-        document.getElementById('nome-pass').innerHTML = nome;
+        document.getElementById('nome-pass').innerHTML = nome + cognome;
         document.getElementById('sconto').innerHTML = 'Sconto ' + '<br>' + eta;
         document.getElementById('carrozza').innerHTML = carrozzaRandom;
         document.getElementById('codice-cp').innerHTML = codiceRandom;

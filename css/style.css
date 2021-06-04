@@ -7,7 +7,7 @@
 section {
     width: 70%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 15px;
 }
 
@@ -50,6 +50,13 @@ section h1, h2 {
     justify-content: center;
     margin-top: 20px;
 }
+.box-button button{
+    padding: 2px 10px;
+    margin: 0 10px;
+}
+button:hover, input:hover, select:hover, label:hover {
+    cursor: pointer;
+}
 /* fine section visibile e inizio section invisibile  */
 
 #invisibile .box-ticket {
@@ -78,8 +85,12 @@ table tr.sotto{
     height: 100px;
     vertical-align: bottom;
 }
+table th{
+    padding-top: 10px;
+}
 table td {
     text-align: center;
+    padding-bottom: 10px;
 }
 
 
