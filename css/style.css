@@ -1,19 +1,68 @@
+/* COMMONS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+}
 
-section h1 {
+section h1, h2 {
      text-align: center;
+     text-transform: uppercase;
+     font-size: 25px;
+     color: white;
 }
-section .box-input{
+.container {
+    background-color: #b91647;
+}
+.container-inside {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* FINE COMMONS  */
+/* section visibile  */
+#visibile .box-input{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
-section .box-nome {
+#visibile .box-nome {
     text-align: center;
 }
-section input{
+#visibile input, #visibile select{
     display: block;
+    margin-top: 15px;
 }
-section .box-button {
+#visibile .box-button {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
+/* fine section visibile e inizio section invisibile  */
+
+#invisibile .box-ticket {
+    display: flex;
+    border-top: 1px solid #757575;
+    border-bottom: 1px solid #757575;
+}
+#invisibile table {
+    width: 100%;
+}
+.box-ticket .box-passegero {
+    width: 20%;
+    height: 100%;
+    background-color: #757575;
+}
+
+
+
+
+
+
+
+
+
