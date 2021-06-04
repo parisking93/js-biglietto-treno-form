@@ -1,3 +1,15 @@
+/* media query  */
+@media (max-width: 556px) {
+    .container-inside {
+        min-width: auto;
+        transform: scale(0.8);
+    }
+}
+@media (max-width: 450px) {
+    .container-inside {
+        transform: scale(0.7);
+    }
+}
 /* COMMONS */
 *{
     margin: 0;
@@ -37,10 +49,6 @@ section h1, h2 {
 }
 .container-inside:hover {
     box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.2);
-    transform: scale(1.01);
-}
-.block{
-    display: block;
 }
 .none{
     display: none;
@@ -73,7 +81,6 @@ section h1, h2 {
 }
 button:hover, input:hover, select:hover, label:hover {
     cursor: pointer;
-    transform: scale(1.01);
 }
 /* fine section visibile e inizio section invisibile  */
 
@@ -114,7 +121,6 @@ table td {
     text-align: center;
     padding-bottom: 10px;
 }
-
 
 
 

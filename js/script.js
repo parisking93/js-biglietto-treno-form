@@ -32,7 +32,7 @@ genera.addEventListener('click', function(){
 
     if (nome !== "" && !(isNaN(km)) && isNaN(nome)) {
         // output
-        document.getElementById("invisibile").className = "block"; 
+        document.getElementById("invisibile").className = "flex"; 
         if (addCognome == !(undefined)) {
             document.getElementById('nome-pass').innerHTML = nome + cognome;
         } else {
