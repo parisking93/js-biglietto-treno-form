@@ -44,7 +44,7 @@ genera.addEventListener('click', function(){
         document.getElementById('costo').innerHTML = prezzoCorsa.toFixed(2) + ' €';
 
     } else {
-        alert('inserisci i giusti dati nei campi o non lasciare campi vuoti.... anche spazi prima delle parole o numeri non sono concessi');
+        alert('Inserisci i GIUSTI dati nei campi o non lasciare campi vuoti.... anche spazi prima delle parole o numeri non sono concessi');
     }
     
 });

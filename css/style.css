@@ -62,6 +62,10 @@ section h1, h2 {
 }
 #visibile .box-nome {
     text-align: center;
+    width: 30%;
+}
+#visibile label {
+    color: #ca4f7b;
 }
 #visibile input, #visibile select{
     display: block;
@@ -69,6 +73,7 @@ section h1, h2 {
     border: 2px solid #b91647;
     border-radius: 5px;
     padding: 2px 5px;
+    width: 100%;
 }
 #visibile .box-button {
     display: flex;
@@ -86,6 +91,11 @@ section h1, h2 {
 button:hover, input:hover, select:hover, label:hover {
     cursor: pointer;
 }
+input:focus, select:focus {
+    outline: none ;
+    box-shadow: 0 0 1px 1px #b91647;
+}
+
 /* fine section visibile e inizio section invisibile  */
 
 #invisibile .box-ticket {
